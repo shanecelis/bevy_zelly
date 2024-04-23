@@ -7,8 +7,8 @@ struct Player;
 #[derive(Default, Bundle, LdtkEntity)]
 struct PlayerBundle {
     player: Player,
-    #[sprite_bundle]
-    sprite_bundle: SpriteBundle,
+    #[sprite_sheet_bundle]
+    sprite_bundle: SpriteSheetBundle,
     #[grid_coords]
     grid_coords: GridCoords,
 }
